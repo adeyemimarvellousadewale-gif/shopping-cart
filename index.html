@@ -1,0 +1,80 @@
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mini Jumia Cart</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container py-5">
+
+    <div class="cart-box mx-auto shadow">
+
+      <div class="cart-header text-center">
+        <div class="cart-icon">🛒</div>
+        <h1>Mini Jumia Cart</h1>
+        <p>Manage your shopping items easily</p>
+      </div>
+
+      <div id="show" class="alert-message">
+        Item deleted successfully!
+      </div>
+
+      <div class="input-section">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Enter your item here..."
+          class="form-control"
+        >
+
+        <button onclick="addItem()" class="btn add-btn">
+          + Add Item
+        </button>
+      </div>
+
+      <div class="action-buttons">
+
+        <button onclick="deleteLast()" class="btn last-btn">
+          Delete Last
+        </button>
+
+        <button onclick="deleteAllItems()" class="btn delete-all-btn">
+          Delete All
+        </button>
+
+      </div>
+
+      <div class="items-title">
+        <h4>My Shopping Items</h4>
+        <span id="itemCount">0 Items</span>
+      </div>
+
+      <div id="display">
+        <div class="empty-cart">
+          <div>🛍️</div>
+          <p>Your cart is empty</p>
+          <small>Add an item to get started</small>
+        </div>
+      </div>
+.
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+```
